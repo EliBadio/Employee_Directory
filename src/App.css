@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+  display: inline-block;
+  background: #f3f3f3;
+  color: #333;
+  font-size: 15px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+
+  cursor: pointer;
+  margin: 0 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sort-btns {
+  margin: 10px 0;
+  
+}
+
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  height: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(102, 99, 92);
+}
+
+.h-center h1 {
+  text-transform: uppercase;
+}
+
+input[type='text'] {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  margin: auto;
+}
+
+.employee-table { 
+  width: 1100px;
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  border: #ddd 1px solid;
+}
+
+.employee-table thead tr {
+  background-color: rgb(117, 115, 110);
+  text-align: left;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 0.75rem 0.9rem;
+  font-size: 1.1rem;
+}
+
+.employee-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.employee-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
 }
